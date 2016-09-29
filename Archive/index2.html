@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://www.technicolor.com/ -->
+<html lang="en" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="js no-touch"><!--<![endif]--><head profile="http://www.w3.org/1999/xhtml/vocab"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="./index_files/8114dd6250"></script><script src="./index_files/nr-974.min.js"></script><script type="text/javascript" async="" src="./index_files/inpage_linkid.js" id="undefined"></script><script async="" src="./index_files/prum.min.js"></script><script type="text/javascript" async="" src="./index_files/dc.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XQcOV15bGwICXVZaAAEG"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),s.on(m,function(){this.bstStart=Date.now()}),s.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(17)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;c<s;c++)a[c].apply(i,r);var u=f[w[n]];return u&&u.push([v,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",w[n]=e,e in f||(f[e]=[])})}var m={},w={},v={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return v}function i(){return new r}var a="nr@context",s=t("gos"),c=t(15),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(w,function(e,n){t[e]||(t[e]=n)});var n="https"===m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(15),f=window,u=f.document,d="addEventListener",l="attachEvent",p=f.XMLHttpRequest,h=p&&p.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:p,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var m=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},v=p&&h&&h[d]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:v};u[d]?(u[d]("DOMContentLoaded",i,!1),f[d]("load",r,!1)):(u[l]("onreadystatechange",o),f[l]("onload",r)),s("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,10,4,3]);</script>
+<link rel="shortlink" href="http://www.technicolor.com/en/node">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow, NOODP, NOYDIR">
+<meta name="generator" content="Drupal 7 (http://drupal.org)">
+<link rel="canonical" href="http://www.technicolor.com/en">
+<meta about="/en/who-we-are/press-news-center" typeof="skos:Concept" property="rdfs:label skos:prefLabel" content="Press &amp; News Center">
+<link href="./index_files/fonts.css" rel="stylesheet" type="text/css">
+<meta name="description" content="Technicolor is the technology leader of digital innovation in the media and entertainment sectors.">
+  <title>Technicolor - Technology-driven company for Media &amp; Entertainment</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="cleartype" content="on">
+
+  <link type="text/css" rel="stylesheet" href="./index_files/css_kShW4RPmRstZ3SpIC-ZvVGNFVAi0WEMuCnI0ZkYIaFw.css" media="all">
+<link type="text/css" rel="stylesheet" href="./index_files/css_FGEsyd2yRcqrLwU1cpVtnmzGdsOvHz7U8xpFYTLT1Nw.css" media="all">
+<link type="text/css" rel="stylesheet" href="./index_files/css_wK_6OkTymLeGE8EAA_dnsRvCJEpFx6LktC0tHt1BluE.css" media="screen">
+<link type="text/css" rel="stylesheet" href="./index_files/css_7FrCzRGw_2zZqaqbPTrOqMSL_1x4OD267I45LAO4u0E.css" media="all">
+<link type="text/css" rel="stylesheet" href="./index_files/css_AnWdlE-k-k5PVv8ZXehBOJz3plI72rVtwzRMHTZOH-A.css" media="all">
+<link type="text/css" rel="stylesheet" href="./index_files/font-awesome.min.css" media="all">
+<link type="text/css" rel="stylesheet" href="./index_files/css_jK9o7C9KEGfYqv19f9RxCufVpXGNJ9Q4h6VWPO6lo3w.css" media="all">
+<link type="text/css" rel="stylesheet" href="./index_files/css_Gmgfu3l4VpACMABUaj3eDjlJG9BEJmxHy03JAuOjg3o.css" media="all">
+  <script src="./index_files/js_0gj6QcpfRH2jzTbCQqf7kEkm4MXY0UA_sRhwPc8jC1o.js"></script>
+<script src="./index_files/js_p7D4dEqhtm048F3_jUhbsSjiqsAcsUs5IKLPNWmEMG0.js"></script>
+<script src="./index_files/js_FlsVImnVqQP2OdLdEyVE21Q1rHdf9dYj_RVp808WOG4.js"></script>
+<script src="./index_files/js_PlpfrwycsBj2-yq1_DGkY8xMte4lMmdgFOHb5Arb9Co.js"></script>
+<script src="./index_files/js"></script>
+<script src="./index_files/js_J_r3usSWk8ErtjWAny4D22Quqze9RbsIubxQCtWjsmI.js"></script>
+<script>window.CKEDITOR_BASEPATH = '/sites/all/libraries/ckeditor/'</script>
+<script src="./index_files/js_rv_BKYv7yieH0IgHddhWHDC-bWGan8yiJbusyOpr0mw.js"></script>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-18579866-1"]);var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(['_setDomainName', 'technicolor.com']);
+_gaq.push(['_setAllowLinker', true]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://" : "http://") + "stats.g.doubleclick.net/dc.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+<script src="./index_files/js_H-fVgMY49VkDtaft8un5bk0TGOAkz9ERgvfkIIcmUQY.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"technicolor_v2","theme_token":"CK62OqquwwmNlfRywt_gif7MaN87CS-7ZC1jZezk9k8","js":{"sites\/all\/libraries\/owl-carousel\/owl.carousel.min.js":1,"sites\/all\/modules\/contrib\/owlcarousel\/includes\/js\/owlcarousel.settings.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.resizable.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.dialog.min.js":1,"sites\/all\/modules\/distrib\/views\/js\/jquery.ui.dialog.patch.js":1,"sites\/all\/modules\/technicolor\/advanced_ga_tracking\/advanced_ga_tracking.js":1,"sites\/all\/modules\/technicolor\/contact_form\/contact_form.js":1,"sites\/all\/modules\/technicolor\/general\/general.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_inline.js":1,"http:\/\/maps.googleapis.com\/maps\/api\/js?sensor=false":1,"sites\/all\/modules\/contrib\/google_map_field\/js\/google_map_field_node_display.js":1,"sites\/all\/modules\/contrib\/google_map_field\/js\/google_map_field_edit_form.js":1,"sites\/all\/modules\/contrib\/panels\/js\/panels.js":1,"sites\/all\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-frontend.js":1,"sites\/all\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-touch.js":1,"sites\/all\/libraries\/jwplayer\/jwplayer.js":1,"sites\/all\/modules\/contrib\/jw_player\/jw_player.js":1,"0":1,"sites\/all\/modules\/distrib\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/all\/themes\/technicolor_v2\/js\/jquery.flexslider-min.js":1,"sites\/all\/themes\/technicolor_v2\/js\/jquery.placeholder.js":1,"sites\/all\/themes\/technicolor_v2\/js\/jquery.matchHeight-min.js":1,"sites\/all\/themes\/technicolor_v2\/js\/stacktable\/stacktable.min.js":1,"sites\/all\/themes\/technicolor_v2\/js\/script.js":1,"sites\/all\/themes\/technicolor_v2\/js\/technicolor.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"misc\/ui\/jquery.ui.button.css":1,"misc\/ui\/jquery.ui.resizable.css":1,"misc\/ui\/jquery.ui.dialog.css":1,"sites\/all\/libraries\/owl-carousel\/owl.carousel.css":1,"sites\/all\/libraries\/owl-carousel\/owl.theme.css":1,"sites\/all\/libraries\/owl-carousel\/owl.transitions.css":1,"sites\/all\/modules\/contrib\/simplenews\/simplenews.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/distrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/distrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/google_map_field\/wysiwyg_plugins\/gmf_tokenbuilder\/css\/gmf_tokenbuilder.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/4.4.0\/css\/font-awesome.min.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/bootstrap.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/base.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/default.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/compatibility.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/styles\/black.css":1,"modules\/taxonomy\/taxonomy.css":1,"sites\/all\/modules\/contrib\/field_collection\/field_collection.theme.css":1,"sites\/all\/themes\/technicolor_v2\/system.menus.css":1,"sites\/all\/themes\/technicolor_v2\/css\/normalize.css":1,"sites\/all\/themes\/technicolor_v2\/css\/wireframes.css":1,"sites\/all\/themes\/technicolor_v2\/css\/layouts\/technicolor-responsive-sidebars.css":1,"sites\/all\/themes\/technicolor_v2\/js\/stacktable\/stacktable.css":1,"sites\/all\/themes\/technicolor_v2\/css\/page-backgrounds.css":1,"sites\/all\/themes\/technicolor_v2\/css\/tabs.css":1,"sites\/all\/themes\/technicolor_v2\/css\/pages.css":1,"sites\/all\/themes\/technicolor_v2\/css\/blocks.css":1,"sites\/all\/themes\/technicolor_v2\/css\/navigation.css":1,"sites\/all\/themes\/technicolor_v2\/css\/views-styles.css":1,"sites\/all\/themes\/technicolor_v2\/css\/nodes.css":1,"sites\/all\/themes\/technicolor_v2\/css\/comments.css":1,"sites\/all\/themes\/technicolor_v2\/css\/forms.css":1,"sites\/all\/themes\/technicolor_v2\/css\/fields.css":1,"sites\/all\/themes\/technicolor_v2\/css\/print.css":1,"sites\/all\/themes\/technicolor_v2\/css\/styles.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"owlcarousel":{"owl-carousel-technicolor_front_slider60":{"settings":{"items":1,"itemsDesktop":["1199",1],"itemsDesktopSmall":["979",3],"itemsTablet":["768",2],"itemsTabletSmall":["0",0],"itemsMobile":["0",0],"singleItem":true,"itemsScaleUp":false,"slideSpeed":200,"paginationSpeed":800,"rewindSpeed":1000,"autoPlay":"5000","stopOnHover":false,"navigation":false,"navigationText":["prev","next"],"rewindNav":true,"scrollPerPage":false,"pagination":true,"paginationNumbers":false,"responsive":true,"responsiveRefreshRate":200,"baseClass":"owl-carousel","theme":"owl-theme","lazyLoad":false,"lazyFollow":true,"lazyEffect":"fadeIn","autoHeight":false,"jsonPath":false,"jsonSuccess":false,"dragBeforeAnimFinish":true,"mouseDrag":true,"touchDrag":true,"addClassActive":false,"transitionStyle":"fade"},"views":{"ajax_pagination":0}}},"jw_player":{"jwplayer4723b0cbd4eb43df1e20b4a9770b6e0e":{"file":"http:\/\/www.youtube.com\/watch?v=In1OhaoL2pk","width":"640","height":"480","controlbar":"bottom","modes":[{"type":"html5"},{"type":"flash","src":"http:\/\/www.technicolor.com\/sites\/all\/libraries\/jwplayer\/player.swf"}]},"jwplayer4862a1ca593d0e4c22ee47e60f8fface":{"file":"http:\/\/www.youtube.com\/watch?v=In1OhaoL2pk","width":"640","height":"480","controlbar":"bottom","modes":[{"type":"html5"},{"type":"flash","src":"http:\/\/www.technicolor.com\/sites\/all\/libraries\/jwplayer\/player.swf"}]}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}});</script>
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/zen/js/html5.js"></script>
+    <![endif]-->
+  
+<!-- Pingdom -->
+<script>
+var _prum = [['id', '555cb440abe53d136fb8bea4'],
+             ['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+    var s = document.getElementsByTagName('script')[0]
+      , p = document.createElement('script');
+    p.async = 'async';
+    p.src = '//rum-static.pingdom.net/prum.min.js';
+    s.parentNode.insertBefore(p, s);
+})();
+</script>
+<!-- /Pingdom -->
+
+<script type="text/javascript" charset="UTF-8" src="./index_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./index_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./index_files/stats.js"></script><script type="text/javascript" charset="UTF-8" src="./index_files/AuthenticationService.Authenticate"></script></head>
+<body class="html front not-logged-in no-sidebars page-node i18n-en" cz-shortcut-listen="true">
+<!-- DBC Universal Tag -->
+<script type="text/javascript">
+                var ATRK_CLIENT_ID="19AE4176";
+                var ATRK_PROTOCOL=(("https:" == document.location.protocol) ? "https://" : "http://");
+                document.write(unescape("%3Cscript type='text/javascript' src='" + ATRK_PROTOCOL + "js.acq.io/ATRK_" + ATRK_CLIENT_ID + "_min.js' %3E%3C/script%3E" ));
+</script><script type="text/javascript" src="./index_files/ATRK_19AE4176_min.js"></script>
+<!-- DBC Universal Tag -->
+      <p id="skip-link">
+      <a href="http://www.technicolor.com/#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+    </p>
+      
+
+<div id="page">
+
+  <header id="header" role="banner">
+    <div class="header-wrapper">
+              <div class="logo-wrapper">
+          <a href="http://www.technicolor.com/en" title="Home" rel="home" id="logo"><img src="./index_files/logo.png" alt="Home"></a>
+        </div>
+        
+        
+        
+        <div class="region region-header">
+    <div id="block-tb-megamenu-main-menu" class="block block-tb-megamenu first odd">
+
+      
+  <div class="tb-megamenu tb-megamenu-main-menu style-black">
+      <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar tb-megamenu-button menuIstance-processed" type="button">
+      <i class="fa fa-reorder"></i>
+    </button>
+    <div class="nav-collapse  always-show" style="height: auto; overflow: visible;">
+    <ul class="tb-megamenu-nav nav level-0 items-7">
+  <li data-id="1950" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="justify" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega mega-align-justify dropdown">
+  <a href="http://www.technicolor.com/#" class="dropdown-toggle" title="Who we are" onclick="return false;">
+        
+    Who we are          <span class="caret"></span>
+          </a>
+  <div data-class="grid-12" data-width="" class="tb-megamenu-submenu grid-12 dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div class="tb-megamenu-row row-fluid row-fluid">
+  <div data-class="" data-width="4" data-hidewcol="0" id="tb-megamenu-column-2" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul class="tb-megamenu-subnav mega-nav level-1 items-6">
+  <li data-id="4987" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.technicolor.com/en/who-we-are" class="mega-group-title" title="Overview">
+        
+    Overview          </a>
+  </li>
+
+<li data-id="1969" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.technicolor.com/en/who-we-are/governance-management" title="Governance &amp; Management">
+        
+    Governance &amp; Management          </a>
+  </li>
+
+<li data-id="3324" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.technicolor.com/en/who-we-are/investor-center" title="Investor Center">
+        
+    Investor Center          </a>
+  </li>
+
+<li data-id="3320" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.technicolor.com/en/who-we-are/press-news-center" title="Press &amp; News Center">
+        
+    Press &amp; News Center          </a>
+  </li>
+
+<li data-id="1956" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.technicolor.com/en/who-we-are/corporate-social-responsibility" title="Corporate Social Responsibility">
+        
+    Corporate Social Responsibility          </a>
+  </li>
+
+<li data-id="4725" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.technicolor.com/en/who-we-are/technicolor-learning-center" title="Technicolor Learning Center">
+        
+    Technicolor Learning Center          </a>
+  </li>
+</ul>
+  </div>
+</div>
+
+<div class="technicolor mega-focus-wrapper mega-col-nav span8" data-class="" data-width="8"><div class="technicolor-focus-wrapper"><div class="technicolor mega-focus-image"><a href="http://www.technicolor.com/en?width=640&amp;height=490&amp;inline=1#technicolor-video-8760" class="colorbox-inline desktop-video-only init-colorbox-inline-processed cboxElement"><img typeof="foaf:Image" src="./index_files/who-we-are-technicolor-manifesto-thumbnail_1.jpg" width="301" height="213" alt=""></a><a href="http://m.youtube.com/watch?v=In1OhaoL2pk&amp;width=640&amp;height=490&amp;inline=1#technicolor-video-8760" class="mobile-video-only" target="_blank"><img typeof="foaf:Image" src="./index_files/who-we-are-technicolor-manifesto-thumbnail_1.jpg" width="301" height="213" alt=""></a></div>
+<div class="technicolor mega-focus-content"><h4>Technicolor Manifesto</h4>Technicolor, a worldwide technology leader in the media and entertainment sector, is at the forefront of digital innovation.<div style="display: none;"><div class="block_video" id="technicolor-video-8760"><div id="myVideoDiv_8760"><iframe id="ytplayer" type="text/html" width="640" height="480" src="./index_files/In1OhaoL2pk.html" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li data-id="1947" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="justify" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega mega-align-justify dropdown">
+  <a href="http://www.technicolor.com/#" class="dropdown-toggle" title="Solutions &amp; Services" onclick="return false;">
+        
+    Solutions &amp; Services          <span class="caret"></span>
+          </a>
+  <div data-class="grid-12" data-width="" class="tb-megamenu-submenu grid-12 dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div class="tb-megamenu-row row-fluid">
+  <div data-class="" data-width="4" data-hidewcol="0" id="tb-megamenu-column-4" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li data-id="1951" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="http://www.technicolor.com/en/solutions-services/entertainment-services" class="mega-group-title" title="Entertainment Services ">
+        
+    Entertainment Services           <span class="caret"></span>
+          </a>
+  <div data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div class="tb-megamenu-row row-fluid">
+  <div data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-3" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul class="tb-megamenu-subnav mega-nav level-2 items-9">
+  <li data-id="4691" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/entertainment-services/virtual-reality">
+        
+    Virtual Reality          </a>
+  </li>
+
+<li data-id="1978" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/entertainment-services/front-end">
+        
+    Front End          </a>
+  </li>
+
+<li data-id="1979" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/entertainment-services/vfx" title="VFX">
+        
+    VFX          </a>
+  </li>
+
+<li data-id="1976" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/entertainment-services/post-production">
+        
+    Picture Post Production          </a>
+  </li>
+
+<li data-id="1977" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/entertainment-services/sound">
+        
+    Sound Post Production          </a>
+  </li>
+
+<li data-id="3870" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/entertainment-services/marketing-services">
+        
+    Marketing Services          </a>
+  </li>
+
+<li data-id="1980" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/entertainment-services/animation-games">
+        
+    Animation &amp; Games          </a>
+  </li>
+
+<li data-id="3868" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/entertainment-services/content-management-distribution">
+        
+    Content Management &amp; Distribution          </a>
+  </li>
+
+<li data-id="1986" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/entertainment-services/blu-ray-dvd-services">
+        
+    Blu-ray &amp; DVD services          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+<div class="under-menu" id="menu-locations"><ul class="menu"><li class="first last expanded"><span class="menu_hide">Creative Houses</span><ul class="menu"><li class="first leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/creative-houses/technicolor-los-angeles" title="">Los Angeles</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/creative-houses/technicolor-london" title="">London</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/creative-houses/technicolor-montreal" title="">Montreal</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/creative-houses/technicolor-toronto" title="">Toronto</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/creative-houses/technicolor-paris" title="">Paris</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/creative-houses/technicolor-vancouver" class="menu_hide">Vancouver</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/creative-houses/technicolor-new-york" title="">New York</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/animation-games/animation-services/our-facilities" title="">Bangalore</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/creative-houses/technicolor-atlanta" title="">Atlanta</a></li>
+<li class="last leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/creative-houses/technicolor-new-orleans" title="">New Orleans</a></li>
+</ul></li>
+</ul></div><div class="under-menu" id="menu-entreprise-solutions"><ul class="menu"><li class="first last expanded"><span class="menu_hide">Business Solutions</span><ul class="menu"><li class="first leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/integrated-production-platform" class="menu_hide">Integrated Production Platform</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/global-logistics" class="menu_hide">Supply Chain &amp; Logistics</a></li>
+<li class="last leaf"><a href="http://www.technicolor.com/en/solutions-services/beam" title="">Content Mgmt &amp; Delivery</a></li>
+</ul></li>
+</ul></div></li>
+</ul>
+  </div>
+</div>
+
+<div data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-6" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li data-id="1953" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="http://www.technicolor.com/en/solutions-services/connected-home" class="mega-group-title" title="Connected Home">
+        
+    Connected Home          <span class="caret"></span>
+          </a>
+  <div data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div class="tb-megamenu-row row-fluid">
+  <div data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-5" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul class="tb-megamenu-subnav mega-nav level-2 items-7">
+  <li data-id="1973" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/connected-home/solutions">
+        
+    Solutions          </a>
+  </li>
+
+<li data-id="1984" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/connected-home/video-devices">
+        
+    Video Devices          </a>
+  </li>
+
+<li data-id="1975" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/connected-home/broadband-devices">
+        
+    Broadband Devices          </a>
+  </li>
+
+<li data-id="1983" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/connected-home/iot-devices">
+        
+    IoT Devices          </a>
+  </li>
+
+<li data-id="4442" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/connected-home/technologies">
+        
+    Technologies          </a>
+  </li>
+
+<li data-id="1987" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/connected-home/open-software-middleware">
+        
+    Software &amp; Middleware          </a>
+  </li>
+
+<li data-id="1974" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/connected-home/professional-services" title="Professional Services">
+        
+    Professional Services          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+<div class="under-menu" id="menu-network"><ul class="menu"><li class="first last expanded"><span class="menu_hide">Your network</span><ul class="menu"><li class="first leaf"><a href="http://www.technicolor.com/en/solutions-services/connected-home/your-network/cable" title="">Cable</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/connected-home/your-network/satellite" title="">Satellite</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/connected-home/your-network/telco" title="">Telco</a></li>
+<li class="last leaf"><a href="http://www.technicolor.com/en/solutions-services/connected-home/your-network/mobile" title="">Mobile</a></li>
+</ul></li>
+</ul></div><div class="under-menu" id="menu-entreprise-solutions"><ul class="menu"><li class="first last expanded"><span class="menu_hide">Enterprise Solutions</span><ul class="menu"><li class="first leaf"><a href="http://www.technicolor.com/en/solutions-services/connected-home/business-access-solutions" class="menu_hide">Business Access Solutions</a></li>
+<li class="last leaf"><a href="http://www.technicolor.com/en/solutions-services/connected-home/commercial-video-solutions" class="menu_hide">Commercial Video Solutions</a></li>
+</ul></li>
+</ul></div></li>
+</ul>
+  </div>
+</div>
+
+<div data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-9" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li data-id="2025" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="http://www.technicolor.com/en/solutions-services/technology" class="mega-group-title" title="Technology">
+        
+    Technology          <span class="caret"></span>
+          </a>
+  <div data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div class="tb-megamenu-row row-fluid">
+  <div data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-8" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul class="tb-megamenu-subnav mega-nav level-2 items-3">
+  <li data-id="1959" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega mega-group">
+  <a href="http://www.technicolor.com/en/solutions-services/technology/technology-licensing" class="mega-group-title" title="Technology Licensing">
+        
+    Technology Licensing          <span class="caret"></span>
+          </a>
+  <div data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div class="tb-megamenu-row row-fluid">
+  <div data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-7" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul class="tb-megamenu-subnav mega-nav level-3 items-3">
+  <li data-id="4524" data-level="4" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-4 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/technology/technology-licensing/hdr-technologies">
+        
+    HDR          </a>
+  </li>
+
+<li data-id="4526" data-level="4" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-4 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/technology/technology-licensing/technicolor-color-enhance">
+        
+    Color Enhance          </a>
+  </li>
+
+<li data-id="4525" data-level="4" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-4 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/technology/technology-licensing/image-color">
+        
+    Image &amp; Color          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li data-id="1964" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/technology/brand-licensing" title="Brand Licensing">
+        
+    Brand Licensing          </a>
+  </li>
+
+<li data-id="4446" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/solutions-services/technology/patent-licensing" title="Patent Licensing">
+        
+    Patent Licensing          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+<div class="under-menu" id="menu-research-innovation-centers"><ul class="menu"><li class="first last expanded"><span class="menu_hide">Research &amp; Innovation</span><ul class="menu"><li class="first leaf"><a href="http://www.technicolor.com/en/innovation/research-innovation/imaging-science-lab" title="">Imaging Science</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/innovation/research-innovation/immersive-lab">Immersive</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/innovation/research-innovation/personalization-lab" title="">Personalization</a></li>
+<li class="last leaf"><a href="http://www.technicolor.com/en/innovation/research-innovation/home-experience-lab">Home Experience</a></li>
+</ul></li>
+</ul></div></li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li data-id="1949" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="justify" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega mega-align-justify dropdown">
+  <a href="http://www.technicolor.com/#" class="dropdown-toggle" title="Innovation" onclick="return false;">
+        
+    Innovation          <span class="caret"></span>
+          </a>
+  <div data-class="grid-12" data-width="" class="tb-megamenu-submenu grid-12 dropdown-menu mega-dropdown-menu nav-child">
+  <div class="mega-dropdown-inner">
+    <div class="tb-megamenu-row row-fluid">
+  <div data-class="" data-width="4" data-hidewcol="0" id="tb-megamenu-column-10" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul class="tb-megamenu-subnav mega-nav level-1 items-6">
+  <li data-id="4997" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.technicolor.com/en/innovation" class="mega-group-title" title="Overview">
+        
+    Overview          </a>
+  </li>
+
+<li data-id="4693" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.technicolor.com/en/innovation/immersive-experiences">
+        
+    Immersive Experiences          </a>
+  </li>
+
+<li data-id="1961" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.technicolor.com/en/innovation/our-vision">
+        
+    Our Vision          </a>
+  </li>
+
+<li data-id="1962" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.technicolor.com/en/innovation/research-innovation">
+        
+    Research and Innovation          </a>
+  </li>
+
+<li data-id="5030" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.technicolor.com/en/innovation/scientific-community">
+        
+    Scientific Community          </a>
+  </li>
+
+<li data-id="5029" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega">
+  <a href="http://www.technicolor.com/en/innovation/open-innovation">
+        
+    Open Innovation          </a>
+  </li>
+</ul>
+  </div>
+</div>
+
+<div data-class="" data-width="4" data-hidewcol="" id="tb-megamenu-column-12" class="tb-megamenu-column span4  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+  <li data-id="4989" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="1" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-2 mega mega-group">
+  <a href="http://www.technicolor.com/en/innovation/research-innovation" class="mega-group-title" title="Research &amp; Innovation Labs">
+        
+    Research &amp; Innovation Labs          <span class="caret"></span>
+          </a>
+  <div data-class="" data-width="" class="tb-megamenu-submenu mega-group-ct nav-child">
+  <div class="mega-dropdown-inner">
+    <div class="tb-megamenu-row row-fluid">
+  <div data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-11" class="tb-megamenu-column span12  mega-col-nav">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+        <ul class="tb-megamenu-subnav mega-nav level-2 items-4">
+  <li data-id="4990" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/innovation/research-innovation/home-experience-lab">
+        
+    Home Experience Lab          </a>
+  </li>
+
+<li data-id="4998" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/innovation/research-innovation/imaging-science-lab">
+        
+    Imaging Science Lab          </a>
+  </li>
+
+<li data-id="4999" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/innovation/research-innovation/immersive-lab">
+        
+    Immersive Lab          </a>
+  </li>
+
+<li data-id="5000" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-3 mega">
+  <a href="http://www.technicolor.com/en/innovation/research-innovation/personalization-lab">
+        
+    Personalization Lab          </a>
+  </li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</li>
+
+<li data-id="4437" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega">
+  <a href="https://careers.technicolor.com/" title="Careers">
+        
+    Careers          </a>
+  </li>
+
+<li data-id="3709" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega">
+  <a href="http://thefuturetrust.technicolor.com/" title="The Future Trust">
+        
+    The Future Trust          </a>
+  </li>
+</ul>
+<div class="mobile-only technicolor-language"><h3>Language</h3><div class="language"><a href="http://www.technicolor.com/en/">EN</a></div><div class="language"><a href="http://www.technicolor.com/fr/">FR</a></div></div>
+      </div>
+  </div>
+
+</div><!-- /.block -->
+<div id="block-search-form" class="block block-search even" role="search">
+
+      
+  <form action="http://www.technicolor.com/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <div class="element-invisible">Search form</div>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text">
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit"></div><input type="hidden" name="form_build_id" value="form-puDwBV9iNgeWxg1l4DUKC3gZddOcXnV2QfzImK7eEa4">
+<input type="hidden" name="form_id" value="search_block_form">
+</div>
+</div></form>
+</div><!-- /.block -->
+<div id="block-general-langue-switcher" class="block block-general last odd">
+
+      
+  <div id="languesite_2" style="display:inline-block;" class="languesite">
+							<div class="mobile_langue_bloc"><a href="javascript:void(0)" class="mobile_only" alt="Close" onclick="jQuery(&#39;#block-general-langue-switcher-2&#39;).hide();">Close</a>
+                                <form name="formulaireLangue" method="POST" action="javascript:switcherLang(2)"><label class="element-invisible" for="formlangue">Language</label>
+                                        <select id="formlangue_2" onchange="this.form.submit()"><option value="en/" selected="">EN</option>	<option value="fr/">fr</option>		</select>	</form></div></div>
+</div><!-- /.block -->
+  </div><!-- /.region -->
+    </div>
+  </header>
+
+  <div id="page-highlight">
+    <div class="breadcrumb-wrapper">
+          </div>
+    
+      </div>
+
+  <div id="main">
+      <div class="region region-highlighted">
+    <div id="block-views-61f9bea430ee6ad9986892f48bbb3082" class="block block-views first odd">
+
+      
+  <div class="view view-technicolor-homepage-slider view-id-technicolor_homepage_slider view-display-id-technicolor_front_slider technicolor-slider view-dom-id-f48fd2b717bc3b10af80f4f53bc0a4a2">
+        
+  
+  
+      <div class="view-content">
+      <div class="owl-carousel-technicolor_front_slider60 owl-carousel owl-theme" style="opacity: 1; display: block;"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 9600px; left: 0px; display: block; transition: all 0ms ease; transform: translate3d(-2880px, 0px, 0px); transform-origin: 3360px center 0px; perspective-origin: 3360px center;"><div class="owl-item" style="width: 960px;"><div class="item-0 slide-item"><div class="slider-wrapper bottom-left-top-right">  
+  <div class="views-field views-field-field-mailto-link" style="right: 5%; top: 5%;">        <div class="field-content"><a href="https://twitter.com/intent/tweet?text=Discover%20The%20Possibilities%20Of%20HDR&amp;url=http%3A//hdr.technicolor.com" class="twitter" target="_blank">twitter</a> <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//hdr.technicolor.com" class="facebook" target="_blank">facebook</a> <a href="mailto:?subject=Your%20colleague%20recommended%3A%20Discover%20The%20Possibilities%20Of%20HDR&amp;body=Your%20colleague%20recommended%20this%20story%20just%20published%20on%20technicolor.com%3A%20http%3A//hdr.technicolor.com" class="mailto">mailto</a></div>  </div>  
+  <div class="views-field views-field-field-slide-image-1">        <div class="field-content"><a href="http://hdr.technicolor.com/"><img typeof="foaf:Image" src="./index_files/hdr_homepage-carousel_0.jpg" width="960" height="460" alt=""></a></div>  </div>  
+  <div class="views-field views-field-field-layout-color">        <div class="field-content"><a href="http://hdr.technicolor.com/"><div class="technicolor-slider-overlay bottom-left-top-right "><div class="left slide hover" style="left: -5%; bottom: -5%;"><img typeof="foaf:Image" src="./index_files/home-blue-lb_0.png" alt=""></div>
+<div class="right slide hover" style="right: -25%; top: -25%;"><img typeof="foaf:Image" src="./index_files/home-blue-tr_0.png" alt=""></div>
+</div>
+</a></div>  </div>  
+  <div class="views-field views-field-title" style="font-size: 26px; left: 5%; bottom: 7%;">        <span class="field-content"><a href="http://hdr.technicolor.com/">Discover The Possibilities Of HDR</a></span>  </div></div>
+</div></div><div class="owl-item" style="width: 960px;"><div class="item-1 slide-item"><div class="slider-wrapper bottom-left-top-right">  
+  <div class="views-field views-field-field-mailto-link" style="right: 5%; top: 5%;">        <div class="field-content"><a href="https://twitter.com/intent/tweet?text=Technicolor%20Wins%20At%20The%20Emmys%C2%AE&amp;url=http%3A//www.technicolor.com/en/who-we-are/press-news-center/news/technicolor-wins-emmys-r" class="twitter" target="_blank">twitter</a> <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.technicolor.com/en/who-we-are/press-news-center/news/technicolor-wins-emmys-r" class="facebook" target="_blank">facebook</a> <a href="mailto:?subject=Your%20colleague%20recommended%3A%20Technicolor%20Wins%20At%20The%20Emmys%C2%AE&amp;body=Your%20colleague%20recommended%20this%20story%20just%20published%20on%20technicolor.com%3A%20http%3A//www.technicolor.com/en/who-we-are/press-news-center/news/technicolor-wins-emmys-r" class="mailto">mailto</a></div>  </div>  
+  <div class="views-field views-field-field-slide-image-1">        <div class="field-content"><a href="http://www.technicolor.com/en/who-we-are/press-news-center/news/technicolor-wins-emmys-r"><img typeof="foaf:Image" src="./index_files/emmy-win-2016_960x460_0.jpg" width="960" height="460" alt=""></a></div>  </div>  
+  <div class="views-field views-field-field-layout-color">        <div class="field-content"><a href="http://www.technicolor.com/en/who-we-are/press-news-center/news/technicolor-wins-emmys-r"><div class="technicolor-slider-overlay bottom-left-top-right "><div class="left slide hover"><img typeof="foaf:Image" src="./index_files/home-purple-lb_0.png" alt=""></div>
+<div class="right slide hover"><img typeof="foaf:Image" src="./index_files/home-purple-tr_0.png" alt=""></div>
+</div>
+</a></div>  </div>  
+  <div class="views-field views-field-title" style="font-size: 26px; left: 5%; bottom: 7%;">        <span class="field-content"><a href="http://www.technicolor.com/en/who-we-are/press-news-center/news/technicolor-wins-emmys-r">Technicolor Wins At The Emmys®</a></span>  </div></div>
+</div></div><div class="owl-item" style="width: 960px;"><div class="item-2 slide-item"><div class="slider-wrapper bottom-left-top-right">  
+  <div class="views-field views-field-field-mailto-link" style="right: 5%; top: 5%;">        <div class="field-content"><a href="https://twitter.com/intent/tweet?text=Open%20Innovation%20Is%20Key%20To%20A%20Successful%20HDR%20Rollout&amp;url=http%3A//thefuturetrust.technicolor.com/article/the-future-of-storytelling/open-approach-to-high-dynamic-range-facilitates-effective-deployment-across-entire-entertainment-value-chain/" class="twitter" target="_blank">twitter</a> <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//thefuturetrust.technicolor.com/article/the-future-of-storytelling/open-approach-to-high-dynamic-range-facilitates-effective-deployment-across-entire-entertainment-value-chain/" class="facebook" target="_blank">facebook</a> <a href="mailto:?subject=Your%20colleague%20recommended%3A%20Open%20Innovation%20Is%20Key%20To%20A%20Successful%20HDR%20Rollout&amp;body=Your%20colleague%20recommended%20this%20story%20just%20published%20on%20technicolor.com%3A%20http%3A//thefuturetrust.technicolor.com/article/the-future-of-storytelling/open-approach-to-high-dynamic-range-facilitates-effective-deployment-across-entire-entertainment-value-chain/" class="mailto">mailto</a></div>  </div>  
+  <div class="views-field views-field-field-slide-image-1">        <div class="field-content"><a href="http://thefuturetrust.technicolor.com/article/the-future-of-storytelling/open-approach-to-high-dynamic-range-facilitates-effective-deployment-across-entire-entertainment-value-chain/"><img typeof="foaf:Image" src="./index_files/entertainment-value-chain_960x460_0.jpg" width="960" height="460" alt=""></a></div>  </div>  
+  <div class="views-field views-field-field-layout-color">        <div class="field-content"><a href="http://thefuturetrust.technicolor.com/article/the-future-of-storytelling/open-approach-to-high-dynamic-range-facilitates-effective-deployment-across-entire-entertainment-value-chain/"><div class="technicolor-slider-overlay bottom-left-top-right "><div class="left slide hover"><img typeof="foaf:Image" src="./index_files/home-blue-lb_0.png" alt=""></div>
+<div class="right slide hover"><img typeof="foaf:Image" src="./index_files/home-blue-tr_0.png" alt=""></div>
+</div>
+</a></div>  </div>  
+  <div class="views-field views-field-title" style="font-size: 24px; left: 5%; bottom: 7%;">        <span class="field-content"><a href="http://thefuturetrust.technicolor.com/article/the-future-of-storytelling/open-approach-to-high-dynamic-range-facilitates-effective-deployment-across-entire-entertainment-value-chain/">Open Innovation Is Key To A Successful HDR Rollout</a></span>  </div></div>
+</div></div><div class="owl-item" style="width: 960px;"><div class="item-3 slide-item"><div class="slider-wrapper bottom-left-top-right">  
+  <div class="views-field views-field-field-mailto-link" style="right: 5%; top: 5%;">        <div class="field-content"><a href="https://twitter.com/intent/tweet?text=Wi-Fi%20Gateway%20Support%20Needed%20For%20North%20East%20Asia%20Broadband%20Infrastructure&amp;url=http%3A//thefuturetrust.technicolor.com/article/content-experiences-everywhere/northeast-asia-needs-wifi-gateway-support-to-keep-up-with-improving-broadband-infrastructure-interview-with-technicolor-vp-cyril-daoud/" class="twitter" target="_blank">twitter</a> <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//thefuturetrust.technicolor.com/article/content-experiences-everywhere/northeast-asia-needs-wifi-gateway-support-to-keep-up-with-improving-broadband-infrastructure-interview-with-technicolor-vp-cyril-daoud/" class="facebook" target="_blank">facebook</a> <a href="mailto:?subject=Your%20colleague%20recommended%3A%20Wi-Fi%20Gateway%20Support%20Needed%20For%20North%20East%20Asia%20Broadband%20Infrastructure&amp;body=Your%20colleague%20recommended%20this%20story%20just%20published%20on%20technicolor.com%3A%20http%3A//thefuturetrust.technicolor.com/article/content-experiences-everywhere/northeast-asia-needs-wifi-gateway-support-to-keep-up-with-improving-broadband-infrastructure-interview-with-technicolor-vp-cyril-daoud/" class="mailto">mailto</a></div>  </div>  
+  <div class="views-field views-field-field-slide-image-1">        <div class="field-content"><a href="http://thefuturetrust.technicolor.com/article/content-experiences-everywhere/northeast-asia-needs-wifi-gateway-support-to-keep-up-with-improving-broadband-infrastructure-interview-with-technicolor-vp-cyril-daoud/"><img typeof="foaf:Image" src="./index_files/homepage-carouse-broadband_0_0.jpg" width="960" height="460" alt=""></a></div>  </div>  
+  <div class="views-field views-field-field-layout-color">        <div class="field-content"><a href="http://thefuturetrust.technicolor.com/article/content-experiences-everywhere/northeast-asia-needs-wifi-gateway-support-to-keep-up-with-improving-broadband-infrastructure-interview-with-technicolor-vp-cyril-daoud/"><div class="technicolor-slider-overlay bottom-left-top-right "><div class="left slide hover" style="left: 0px; bottom: 0px;"><img typeof="foaf:Image" src="./index_files/home-orange-lb_0.png" alt=""></div>
+<div class="right slide hover" style="right: -20%; top: -20%;"><img typeof="foaf:Image" src="./index_files/home-orange-tr_0.png" alt=""></div>
+</div>
+</a></div>  </div>  
+  <div class="views-field views-field-title" style="font-size: 20px; left: 5%; bottom: 7%;">        <span class="field-content"><a href="http://thefuturetrust.technicolor.com/article/content-experiences-everywhere/northeast-asia-needs-wifi-gateway-support-to-keep-up-with-improving-broadband-infrastructure-interview-with-technicolor-vp-cyril-daoud/">Wi-Fi Gateway Support Needed For North East Asia Broadband Infrastructure</a></span>  </div></div>
+</div></div><div class="owl-item" style="width: 960px;"><div class="item-4 slide-item"><div class="slider-wrapper bottom-left-top-right">  
+  <div class="views-field views-field-field-mailto-link" style="right: 5%; top: 5%;">        <div class="field-content"><a href="https://twitter.com/intent/tweet?text=Smooth%20Storytelling%20With%20Jack%20Daniels&amp;url=http%3A//www.technicolor.com/en/who-we-are/press-news-center/news/smooth-storytelling-jack-daniels" class="twitter" target="_blank">twitter</a> <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.technicolor.com/en/who-we-are/press-news-center/news/smooth-storytelling-jack-daniels" class="facebook" target="_blank">facebook</a> <a href="mailto:?subject=Your%20colleague%20recommended%3A%20Smooth%20Storytelling%20With%20Jack%20Daniels&amp;body=Your%20colleague%20recommended%20this%20story%20just%20published%20on%20technicolor.com%3A%20http%3A//www.technicolor.com/en/who-we-are/press-news-center/news/smooth-storytelling-jack-daniels" class="mailto">mailto</a></div>  </div>  
+  <div class="views-field views-field-field-slide-image-1">        <div class="field-content"><a href="http://www.technicolor.com/en/who-we-are/press-news-center/news/smooth-storytelling-jack-daniels"><img typeof="foaf:Image" src="./index_files/jack-daniels_960x460_0_0.jpg" width="960" height="460" alt=""></a></div>  </div>  
+  <div class="views-field views-field-field-layout-color">        <div class="field-content"><a href="http://www.technicolor.com/en/who-we-are/press-news-center/news/smooth-storytelling-jack-daniels"><div class="technicolor-slider-overlay bottom-left-top-right "><div class="left slide hover"><img typeof="foaf:Image" src="./index_files/home-blue-lb_0.png" alt=""></div>
+<div class="right slide hover"><img typeof="foaf:Image" src="./index_files/home-blue-tr_0.png" alt=""></div>
+</div>
+</a></div>  </div>  
+  <div class="views-field views-field-title" style="font-size: 26px; left: 5%; bottom: 7%;">        <span class="field-content"><a href="http://www.technicolor.com/en/who-we-are/press-news-center/news/smooth-storytelling-jack-daniels">Smooth Storytelling With Jack Daniels</a></span>  </div></div>
+</div></div></div></div><div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</div><!-- /.block -->
+<div id="block-views-f6f4b57fcb04e4cf18941f216baa0dd6" class="block block-views even">
+
+      
+  <div class="view view-technicolor-homepage-feature-item view-id-technicolor_homepage_feature_item view-display-id-technicolor_featured_items view-dom-id-dfa16f4cac0d54df062ed8d8f420b642">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first hover">
+      
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="http://www.technicolor.com/en/who-we-are/press-news-center/news/technicolor-opens-technicolor-experience-center%20"><img typeof="foaf:Image" src="./index_files/tec-announcement-thumb_0.jpg" width="320" height="190" alt=""></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.technicolor.com/en/who-we-are/press-news-center/news/technicolor-opens-technicolor-experience-center"><div class="hover-state">
+<span></span><h3>Technicolor Opens The “Technicolor Experience Center”</h3>
+<div class="technicolor_read_more">Read More</div>
+</div></a></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even hover">
+      
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="http://www.technicolor.com/en/who-we-are/technicolor-learning-center/technicolor-learning-center-hdr%20"><img typeof="foaf:Image" src="./index_files/lower-3-block-tlc-hdr_0.jpg" width="320" height="190" alt=""></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.technicolor.com/en/who-we-are/technicolor-learning-center/technicolor-learning-center-hdr"><div class="hover-state">
+<span></span><h3>Discover the Wonders of HDR</h3>
+<div class="technicolor_read_more">Read More</div>
+</div></a></span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last hover">
+      
+  <div class="views-field views-field-field-image">        <div class="field-content"><a href="http://www.technicolor.com/en/who-we-are/architects-amazement%20"><img typeof="foaf:Image" src="./index_files/architects-of-amazement-320x190_0.jpg" width="320" height="190" alt=""></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.technicolor.com/en/who-we-are/architects-amazement"><div class="hover-state">
+<span></span><h3>Let's Create Amazing Experiences</h3>
+<div class="technicolor_read_more">Read More</div>
+</div></a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</div><!-- /.block -->
+<div id="block-boxes-tech-front-left" class="block block-boxes block-boxes-simple grid-mobile-12 grid-tablet-6 odd">
+
+      
+  <div id="boxes-box-tech_front_left" class="boxes-box"><div class="boxes-box-content"> <div class="technicolor_left_box"><img alt="" class="full-homepage" src="./index_files/leftsidehomepage.png"><a href="http://www.technicolor.com/en/future-storytelling" target="_self"> </a>
+<div class="center-box technicolor_box_title"><a href="http://www.technicolor.com/en/future-storytelling" target="_self">THE FUTURE OF STORYTELLING</a></div>
+<div class="center-box technicolor_box_description">
+<div class="technicolor_bar"><a href="http://www.technicolor.com/en/future-storytelling" target="_self">&nbsp;</a></div>
+<div class="technicolor_description"><a href="http://www.technicolor.com/en/future-storytelling" target="_self">By bringing together artistry with industry-leading technologies, we help define the future of storytelling.</a></div>
+<div class="technicolor_bar"><a href="http://www.technicolor.com/en/future-storytelling" target="_self">&nbsp;</a></div>
+</div>
+</div>
+ </div></div>
+</div><!-- /.block -->
+<div id="block-boxes-tech-front-right" class="block block-boxes block-boxes-simple  grid-mobile-12 grid-tablet-6 last even">
+
+      
+  <div id="boxes-box-tech_front_right" class="boxes-box"><div class="boxes-box-content"> <div class="technicolor_right_box"><img alt="" class="full-homepage" src="./index_files/rightsidehomepage.png"><a href="http://www.technicolor.com/en/content-experiences-everywhere" target="_self"> </a>
+<div class="center-box technicolor_box_title"><a href="http://www.technicolor.com/en/content-experiences-everywhere" target="_self">CONTENT EXPERIENCES EVERYWHERE</a></div>
+<div class="center-box technicolor_box_description">
+<div class="technicolor_bar"><a href="http://www.technicolor.com/en/content-experiences-everywhere" target="_self">&nbsp;</a></div>
+<div class="technicolor_description"><a href="http://www.technicolor.com/en/content-experiences-everywhere" target="_self">We help deliver the most immersive and engaging content experiences to global audiences anywhere, anytime, and on any device.</a></div>
+<div class="technicolor_bar"><a href="http://www.technicolor.com/en/content-experiences-everywhere" target="_self">&nbsp;</a></div>
+</div>
+</div>
+ </div></div>
+</div><!-- /.block -->
+  </div><!-- /.region -->
+    <div id="content" class="column" role="main">
+      <a id="main-content"></a>
+                                                
+<!-- region__no_wrapper -->
+          </div><!-- /#content -->
+
+    <div id="navigation">
+
+      
+      
+    </div><!-- /#navigation -->
+
+    
+    
+    <div id="content-bottom">
+          </div>
+    
+  </div><!-- /#main -->
+
+  <div class="footer-wrapper">
+      <footer id="footer" class="region region-footer">
+    <div id="block-menu-menu-footer-menu" class="block block-menu first odd" role="navigation">
+
+      
+  <ul class="menu"><li class="first last expanded"><a href="http://www.technicolor.com/en/who-we-are" title="">About Technicolor</a><ul class="menu"><li class="first leaf"><a href="http://www.technicolor.com/en/who-we-are/governance-management" title="">Governance &amp; Management</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/who-we-are/investor-center" title="">Investor Center</a></li>
+<li class="last leaf"><a href="http://www.technicolor.com/en/who-we-are/corporate-social-responsibility" title="">Corporate Social Responsibility</a></li>
+</ul></li>
+</ul>
+</div><!-- /.block -->
+<div id="block-menu-menu-footer-menu-col3" class="block block-menu even" role="navigation">
+
+      
+  <ul class="menu"><li class="first last expanded"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services" title="">Entertainment Services</a><ul class="menu"><li class="first leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/front-end" title="">Front End</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/virtual-reality" title="">Virtual Reality</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/vfx" title="">VFX</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/post-production" title="">Picture Post Production</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/sound" title="">Sound Post Production</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/marketing-services" title="">Marketing Services</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/content-management-distribution" title="">Content Management &amp; Distribution</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/animation-games" title="">Animation &amp; Games</a></li>
+<li class="last leaf"><a href="http://www.technicolor.com/en/solutions-services/entertainment-services/blu-ray-dvd-services" title="">Blu-ray &amp; DVD Services</a></li>
+</ul></li>
+</ul>
+</div><!-- /.block -->
+<div id="block-menu-menu-footer-connected-homes" class="block block-menu odd" role="navigation">
+
+      
+  <ul class="menu"><li class="first last expanded"><a href="http://www.technicolor.com/en/solutions-services/connected-home">Connected Home</a><ul class="menu"><li class="first leaf"><a href="http://www.technicolor.com/en/solutions-services/connected-home/your-network/cable">Cable</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/connected-home/your-network/telco">Telco</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/solutions-services/connected-home/your-network/satellite">Satellite</a></li>
+<li class="last leaf"><a href="http://www.technicolor.com/en/solutions-services/connected-home/your-network/mobile">Mobile</a></li>
+</ul></li>
+</ul>
+</div><!-- /.block -->
+<div id="block-menu-menu-footer-menu-col4" class="block block-menu even" role="navigation">
+
+      
+  <ul class="menu"><li class="first last expanded"><a href="http://www.technicolor.com/en/innovation" title="">Innovation</a><ul class="menu"><li class="first leaf"><a href="http://www.technicolor.com/en/innovation/immersive-experiences" title="">Immersive Experiences</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/innovation/our-vision" title="">Our Vision</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/innovation/research-innovation" title="">Research &amp; Innovation</a></li>
+<li class="last leaf"><a href="http://www.technicolor.com/en/innovation/scientific-community">Scientific Community</a></li>
+</ul></li>
+</ul>
+</div><!-- /.block -->
+<div id="block-menu-menu-footer-press-news" class="block block-menu odd" role="navigation">
+
+      
+  <ul class="menu"><li class="first last expanded"><a href="http://www.technicolor.com/en/who-we-are/press-news-center">Press &amp; News Center</a><ul class="menu"><li class="first leaf"><a href="http://www.technicolor.com/en/who-we-are/press-news-center/news">News</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/who-we-are/press-news-center/events">Events</a></li>
+<li class="last leaf"><a href="http://www.technicolor.com/en/who-we-are/press-news-center/press-releases">Press Releases</a></li>
+</ul></li>
+</ul>
+</div><!-- /.block -->
+<div id="block-menu-menu-footer-menu-col2" class="block block-menu even" role="navigation">
+
+      
+  <ul class="menu"><li class="first leaf"><a href="http://www.technicolor.com/en/contact">Contact Us</a></li>
+<li class="leaf"><a href="https://careers.technicolor.com/">Careers</a></li>
+<li class="last leaf"><a href="http://www.technicolor.com/en/partners-clients">Partners</a></li>
+</ul>
+</div><!-- /.block -->
+<div id="block-boxes-footer-social-links" class="block block-boxes block-boxes-simple grid-12 float-right odd">
+
+      
+  <div id="boxes-box-footer_social_links" class="boxes-box"><div class="boxes-box-content"> <div class="social_footer float-right"><a class="social_twitter" href="https://twitter.com/technicolor" target="_blank">&nbsp;</a> <a class="social_instagram" href="https://instagram.com/technicolorco" target="_blank">&nbsp;</a> <a class="social_facebook" href="https://www.facebook.com/Technicolor" target="_blank">&nbsp;</a> <a class="social_youtube" href="http://www.youtube.com/technicolor/" target="_blank">&nbsp;</a><a class="social_googleplus" href="http://plus.google.com/107945431716591328957" target="_blank">&nbsp;</a> <a class="social_linkedin" href="http://www.linkedin.com/company/technicolor" target="_blank">&nbsp;</a></div>
+<!-- Place this tag where you want the widget to render. --><div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/107945431716591328957" data-rel="publisher">&nbsp;</div>
+ </div></div>
+</div><!-- /.block -->
+<div id="block-boxes-footer-copyright" class="block block-boxes block-boxes-simple grid-12 even">
+
+      
+  <div id="boxes-box-footer_copyright" class="boxes-box"><div class="boxes-box-content"> <p class="block_copyright float-right">© 2016 Technicolor. All Rights Reserved</p>
+ </div></div>
+</div><!-- /.block -->
+<div id="block-menu-menu-legal-menu" class="block block-menu last odd" role="navigation">
+
+      
+  <ul class="menu"><li class="first leaf"><a href="http://www.technicolor.com/en/legal#Our Partners" title="">Credits</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/legal" title="">Legal</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/sitemap" title="">Sitemap</a></li>
+<li class="leaf"><a href="http://www.technicolor.com/en/legal/california-transparency-supply-chains-act" title="">CTISCA</a></li>
+<li class="last leaf"><a href="http://www.technicolor.com/fr" title="This is the link to the french site">French Version</a></li>
+</ul>
+</div><!-- /.block -->
+  </footer><!-- region__footer -->
+  </div>
+
+</div><!-- /#page -->
+
+  <script src="./index_files/js__JoTd9Oxwhsenh2V4oPwBopK_5ZERouXB3otHIn_MrM.js"></script>
+<script src="./index_files/js_kVhMNj8le3n1K0vrEBIREUg5rXSZCEI5yxGR2pg3qxY.js"></script>
+<!-- Code Google de la balise de remarketing -->
+<!--------------------------------------------------
+Les balises de remarketing ne peuvent pas �tre associ�es aux informations personnelles ou plac�es sur des pages li�es aux cat�gories � caract�re sensible. Pour comprendre et savoir comment configurer la balise, rendez-vous sur la page http://google.com/ads/remarketingsetup.
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 980139097;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="./index_files/conversion.js">
+</script><iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./index_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no"></iframe>
+<noscript>
+&lt;div style="display:inline;"&gt;
+&lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980139097/?value=0&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+&lt;/div&gt;
+</noscript>
+<!-- Code Google de la balise de remarketing -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8114dd6250","applicationID":"12978701","transactionName":"ZVwDZ0VWXEdUV00LClwWNEFeGF9aQRtcEg1XVARBVlsdQ0JDFgoKQU0SHEBARRpBUVoKC1taDl9YRRxXWlkWCwtWXBkdR19C","queueTime":0,"applicationTime":433,"atts":"SRsAEQ1MT0k=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div></body></html>
