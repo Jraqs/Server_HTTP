@@ -1,6 +1,7 @@
 var net = require('net');
 var fs = require('fs');
 var path = require("path");
+<<<<<<< HEAD
 var responses = require('./responses.js');
 var file = require ('./html_file_processing');
 var pars = require("./parsing.js");
@@ -9,6 +10,11 @@ var create_resp = require('./create_res_obj.js');
 var CODES = require('./codes.js');
 var routes = {};
 var paths = [];
+=======
+var responses = require('./responses.js')
+var file = require ('./html_file_processing')
+var pars = require("./parsing.js")
+>>>>>>> cf0ca9116bc615096057d18c742d57d410254340
 
 
 var server = net.createServer(function(socket)
@@ -47,6 +53,7 @@ const process = (text, socket) => {
     }
     else
     {
+<<<<<<< HEAD
       //console.log(routes.tokens);
       var route = routes[req.method].reverse().find(route => route.regexp.test(req.path))
       if (route)
@@ -105,3 +112,20 @@ module.exports = {
     server.listen(port);
   }
 }
+=======
+        var response = {};
+        var pat;
+        var request;
+
+        request = pars.parse_req(data);
+        pat = file.parse_file(request.header);
+        file.verify_send_file(pat, response, request, function(response, body, image){
+            var string = [response.full(), body].join('\r\n\r\n');
+            console.log(response.full());
+            socket.write(string + '\r\n');
+            socket.end();
+          });
+    })
+});
+server.listen(5000);
+>>>>>>> cf0ca9116bc615096057d18c742d57d410254340
