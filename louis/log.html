@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>~</title>
+
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/material.min.css">
+    <script defer src="./scripts/material.min.js"></script>
+
+    <style>
+      * { outline: none; }
+
+      .demo-layout-transparent { background: url('./assets/background.jpg') center / cover; }
+
+      .demo-layout-transparent .mdl-layout__header,
+      .demo-layout-transparent .mdl-layout__drawer-button { color: white; }
+
+      .demo-layout-transparent .mdl-card__actions { text-align: center; }
+
+      .mdl-layout__content {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <!-- Right aligned menu below button -->
+            <button id="demo-menu-lower-right"
+                    class="mdl-button mdl-js-button mdl-button--icon">
+              <i class="material-icons">more_vert</i>
+            </button>
+
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="demo-menu-lower-right">
+              <li class="mdl-menu__item" onclick="window.location.reload()">reload page</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="/">Home</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Welcome</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <form method="post" action="/">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="email">
+                <label class="mdl-textfield__label" for="email">foo@bar.com</label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="password" id="passwd">
+                <label class="mdl-textfield__label" for="passwd">******</label>
+              </div>
+            </form>
+          </div>
+          <div class="mdl-card__actions">
+            <a id="loginbutton" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              login
+            </a>
+            <a id="signupbutton" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              signup
+            </a>
+            <a id="passwdbutton" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              change password
+            </a>
+            <a id="delbutton" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              forget me
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+      var serv = window.location.protocol + '//' + window.location.host;
+
+      $("form").submit(function(e) { e.preventDefault(); });
+
+      $("#signupbutton").click(function(e) {
+        e.preventDefault();
+
+        $.ajax({
+          url : serv + "/user",
+          type : "put",
+          data : {
+            email  : $("#email").val(),
+            passwd : $("#passwd").val()
+          },
+          complete: function(response_body) {
+            console.log(response_body);
+            //alert()
+          }
+        })
+      });
+
+      $("#loginbutton").click(function(e) {
+        e.preventDefault();
+
+        $.ajax({
+          url : serv + "/login",
+          type : "post",
+          data : {
+            email  : $("#email").val(),
+            passwd : $("#passwd").val()
+          },
+          complete: function(response_body) {
+            console.log(response_body);
+            //alert()
+          }
+        })
+      });
+
+      $("#passwdbutton").click(function(e) {
+        e.preventDefault();
+
+        $.ajax({
+          url : serv + "/user/" + $("#email").val(),
+          type : "post",
+          data : {
+            passwd : $("#passwd").val()
+          },
+          complete: function(response_body) {
+            console.log(response_body);
+            //alert()
+          }
+        })
+      });
+
+      $("#delbutton").click(function(e) {
+        e.preventDefault();
+
+        $.ajax({
+          url : serv + "/user/" + $("#email").val(),
+          type : "delete",
+          data : {
+            passwd : $("#passwd").val()
+          },
+          complete: function(response_body) {
+            console.log(response_body);
+            //alert()
+          }
+        })
+      });
+
+    </script>
+  </body>
+</html>
